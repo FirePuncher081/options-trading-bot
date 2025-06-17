@@ -11,15 +11,15 @@ A Python-based machine learning pipeline for predicting short-term movements in 
 
 ## 📂 Project Structure
 
-options-trading-bot/
-├── data/ # Raw and processed options data
-├── models/ # Saved trained models
-├── notebooks/ # Jupyter notebooks for EDA and modeling
-├── scripts/ # Data ingestion and automation scripts
-├── utils/ # (Optional) Reusable functions
-├── journey/ # Archived development steps
-├── requirements.txt
-└── README.md
+options-trading-bot:
+- data: Raw and processed options data
+- models: Saved trained models
+- notebooks: Jupyter notebooks for EDA and modeling
+- scripts: Data ingestion and automation scripts
+- utils: Reusable functions
+- journey: Archived development steps
+- requirements.txt
+- README.md
 
 ## 📊 Example Model Output
 
