@@ -1,55 +1,45 @@
 # 📈 Options Trading Bot
 
-A Python-based machine learning pipeline for predicting short-term movements in call option contracts.
+This project is an early-stage attempt at building a machine learning-driven options trading bot. It collects and engineers options market data to make intelligent predictions about whether a given option will expire **in-the-money (ITM)** or **out-of-the-money (OTM)**.
 
-## 🚀 Project Goals
-
-- Collect real options chain data across multiple tickers and expirations
-- Engineer relevant features (e.g., moneyness, days to expiration)
-- Train and evaluate ML models to classify profitable opportunities
-- Prepare for real-time predictions and potential paper/live trading
-
-## 📂 Project Structure
-
-options-trading-bot:
-- data: Raw and processed options data
-- models: Saved trained models
-- notebooks: Jupyter notebooks for EDA and modeling
-- scripts: Data ingestion and automation scripts
-- utils: Reusable functions
-- journey: Archived development steps
-- requirements.txt
-- README.md
-
-## 📊 Example Model Output
-
-- Logistic Regression w/ class balancing
-- Precision: 0.33 | Recall: 0.83 | F1: 0.48 (for class 1: profitable trades)
-- Confusion Matrix:
-
-          Predicted
-       |   0   |   1
-    ---|-------|------
-Actual 0 | 30 | 10
-Actual 1 | 1 | 5
-
-## 📚 Notebooks
-
-- `feature_engineering.ipynb` – creates model-ready features
-- `model_baseline.ipynb` – trains logistic regression classifier
-
-## 🧠 Next Steps
-
-- Move to XGBoost or LightGBM
-- Integrate real-time prediction script
-- Add backtesting and alert logic
-- Deploy model and share predictions
-
-## 🤝 Collaborators
-
-- Shahzeb Narsi
-- Sumair Saleem
+It’s built with flexibility in mind, allowing for multi-ticker support, automation-ready design, and modular pipelines for future integration with paper trading and live execution systems.
 
 ---
 
-Feel free to clone, fork, or contribute!
+## 🚀 Project Goals
+
+- ✅ Collect historical options chain data from Yahoo Finance
+- ✅ Engineer features like moneyness, time to expiration, and volatility metrics
+- ✅ Train a baseline classifier to predict ITM/OTM options
+- 🔄 [In Progress] Add more complex models like XGBoost and ensemble methods
+- 🔜 Automate workflows and enable signal-based paper trading (via Alpaca/n8n)
+- 🔜 Visualize live metrics and performance in a clean dashboard
+
+---
+
+## ⚙️ Tech Stack
+
+- **Python 3.10+**
+- `yfinance`, `pandas`, `scikit-learn`, `matplotlib`
+- Jupyter Notebooks
+- Git + GitHub for version control
+- Virtual Environment (via `venv`)
+
+---
+
+## 📁 Folder Structure
+
+options-trading-bot/
+- data/ # Raw or processed options data
+- models/ # Trained models (pickle/joblib)
+- notebooks/ # Jupyter notebooks for dev
+   - data_collection.ipynb
+   - feature_engineering.ipynb
+   - model_baseline.ipynb
+- scripts/ # Reusable Python scripts (to be refactored from notebooks)
+   - data_loader.py
+   - feature_engineering.py
+   - train_model.py
+- images/ # Visual outputs (confusion matrix, ROC curves, etc.)
+- requirements.txt # Python dependencies
+- README.md # You're reading it.
