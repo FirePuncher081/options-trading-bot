@@ -1,0 +1,13 @@
+{
+  "initial_cash": 10000,
+  "allocation": 0.05,
+  "max_positions": 5,
+  "max_per_ticker": 2,
+  "min_volume": 10,
+  "min_open_interest": 10,
+  "max_spread_pct": 0.2,
+  "fee_per_contract": 0.65,
+  "slippage_bps": 10,
+  "probability_threshold": 0.55,
+  "multiplier": 100
+}

@@ -32,3 +32,14 @@ websockets==15.0.1
 wheel==0.45.1
 yfinance==0.2.63
 
+scikit-learn==1.9.1
+seaborn==0.13.2
+xgboost==3.4.1
+lightgbm==4.7.0
+imbalanced-learn==0.14.2
+shap==0.54.1
+jupyterlab==4.6.4
+nbconvert==7.17.2
+ipykernel==7.4.0
+joblib==1.6.0
+pytest==8.4.2
